@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        #headbar p {
+            display: inline;
+            margin-right: 5rem;
+        }
+        
+        .g2 {
+            grid-row: 2;
+        }
+        .g3 {
+            grid-row: 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="headbar">
+        <p>Frage <span id="q_id"></span></p><p>Es geht um <span id="currentprice"></span>€</p><p id="endgame">Spiel beenden</p>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 0.5fr 0.5fr">
+        <div style="grid-column: 1 / 3;">
+            <h2 id="question"></h2>
+        </div>
+        <div class="g2" style="" id="hud_a">
+            <p>A: <span id='opt_a'></span></p>
+        </div>
+        <div class="g2" style="" id="hud_b">
+            <p>B: <span id='opt_b'></span></p>
+        </div>
+        <div class="g3" style="" id="hud_c">
+            <p>C: <span id='opt_c'></span></p>
+        </div>
+        <div class="g3" style="" id="hud_d">
+            <p>D: <span id='opt_d'></span></p>
+        </div>
+    </div>
+    <div>
+        <button id="next">Weiter</button>
+    </div>
+        
+<script src="functions.js"></script>
+</body>
+</html>
